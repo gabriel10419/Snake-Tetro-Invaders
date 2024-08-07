@@ -113,9 +113,6 @@ const canvas = document.getElementById("canvasJogo");
     peçaTetris = peçaTetris.map(segmento => ({ x: segmento.x, y: segmento.y - minY }));
     cobra = [];
     comida = null;
-
-    // Limpar blocos temporários antes de começar
-    gridTetris = Array.from({ length: qtdTilesY }, () => Array(qtdTilesX).fill(null));
 }
 
 
